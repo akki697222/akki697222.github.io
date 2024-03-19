@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>あっきーサーバー</title>
+</head>
+
+<body>
+    <video autoplay="" loop="" width="100%" poster="akki.png">
+        <source src="minecraft.mp4" type="video/mp4">
+    </video>
+    <source src="minecraft.mp4" type="video/mp4">
+
+
+    Sorry, your browser doesn't support embedded videos.
+    <script>
+        // Change the variables below to your liking
+        const currentURL = "minecraft.mp4";
+        const pageTitle = "akkiServer Official Website";
+        // End of changable variables
+
+        function setTitle() {
+            document.title = pageTitle;
+        }
+
+        function redirect() {
+            window.location.href = currentURL;
+        }
+
+        function onload() {
+            setTitle();
+            redirect();
+        }
+
+        window.onload = onload();
+    </script>
+    <iframe src="about:blank" style="display: none;">
+        <html>
+
+        <head></head>
+
+        <body></body>
+
+        </html>
+    </iframe>
+</body>
+
+</html>
